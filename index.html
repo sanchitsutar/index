@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Web Design Template</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefefe;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2980b9, #6dd5fa);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2c3e50;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: white;
+      padding: 16px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #f1c40f;
+      color: #2c3e50;
+    }
+
+    .main {
+      text-align: center;
+    }
+
+    .marq {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .MET {
+      font-size: 32px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .MET1 {
+      font-size: 18px;
+      color: #ffe;
+    }
+
+    .container {
+      flex: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .box {
+      background-color: #ecf0f1;
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .box h3 {
+      margin-top: 20px;
+      color: #2c3e50;
+    }
+
+    .box ul {
+      padding-left: 18px;
+    }
+
+    .box ul li a {
+      text-decoration: none;
+      color: #34495e;
+    }
+
+    .box ul li a:hover {
+      text-decoration: underline;
+      color: #e74c3c;
+    }
+
+    .footer {
+      background: linear-gradient(90deg, #16a085, #1abc9c);
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+      header {
+        font-size: 20px;
+      }
+
+      .box h3 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <marquee class="marq" bgcolor="#e74c3c" direction="left">
+      <div class="MET">MET BKC IOT Poly IT Department</div>
+      <div class="MET1">Created By: Mr.Sanchit Ganesh Sutar</div>
+    </marquee>
+  </div>
+
+  <header>
+    <h1>Practicals Learn in Web Page Designing</h1>
+  </header>
+
+  <nav>
+    <a href="https://metbhujbalknowledgecity.ac.in/metpoly/" target="_blank">MET Poly</a>
+    <a href="https://metbhujbalknowledgecity.ac.in/metpoly/information-technology/" target="_blank">IT Dept.</a>
+    <a href="https://metbhujbalknowledgecity.ac.in/metpoly/it-vision-mission/" target="_blank">Dept. Vision</a>
+    <a href="https://metbhujbalknowledgecity.ac.in/metpoly/it-faculty/">Staff</a>
+  </nav>
+
+  <div class="container">
+    <section class="grid">
+      <div class="box">
+        <img src="https://txon.in/assets/img/htmlintro.png" alt="Image Not found">
+        <h3>Introduction to HTML</h3>
+        <ul>
+          <li><a href="prac1.html">Prac 1</a> - Basic HTML tags</li>
+          <li><a href="prac2.html">Prac 2</a> - Heading tags</li>
+          <li><a href="prac3.html">Prac 3</a> - Paragraph in web page</li>
+          <li><a href="prac4.html">Prac 4</a> - Block level tags</li>
+          <li><a href="prac5.html">Prac 5</a> - Text level tag</li>
+          <li><a href="prac6.htm">Prac 6</a> - Border Properties</li>
+          <li><a href="prac7.html">Prac 7</a> - Special characters</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <img src="https://www.tutorialbrain.com/wp-content/uploads/2019/02/Links-in-HTML-1.jpg" alt="Image Not found">
+        <h3>Lists and Links</h3>
+        <ul>
+          <li><a href="prac8.html">Prac 8</a> - Ordered & Unordered lists</li>
+          <li><a href="prac9.html">Prac 9</a> - Different list types</li>
+          <li><a href="prac10.html">Prac 10</a> - Web page link</li>
+          <li><a href="prac11.html">Prac 11</a> - Links in web page</li>
+          <li><a href="prac12.html">Prac 12</a> - Links with images</li>
+          <li><a href="prac13.html">Prac 13</a> - Colors for links</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <img src="https://www.gavick.com/documentation/wp-content/uploads/2013/09/colors-table.png" alt="Image Not found">
+        <h3>Images, Colors and Background</h3>
+        <ul>
+          <li><a href="prac14.html">Prac 14</a> - Foreground and background images</li>
+          <li><a href="prac15.html">Prac 15</a> - Image with hyperlink</li>
+          <li><a href="prac16.html">Prac 16</a> - Background properties</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <img src="https://trainings.internshala.com/blog/wp-content/uploads/2023/07/Frames-in-html-1-1536x640.jpg" alt="Image Not found">
+        <h3>Table, Frames and Forms</h3>
+        <ul>
+          <li><a href="prac17.html">Prac 17</a> - Table in web page</li>
+          <li><a href="prac18.html">Prac 18</a> - Nested tables & images</li>
+          <li><a href="prac19.html">Prac 19</a> - Table row/column attributes</li>
+          <li><a href="prac20.html">Prac 20</a> - Frames</li>
+          <li><a href="prac21.html">Prac 21</a> - HTML Forms</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <img src="https://i.ytimg.com/vi/vzZ7TXGIQ3Y/hq720.jpg" alt="Image Not found">
+        <h3>Cascading Style Sheets</h3>
+        <ul>
+          <li><a href="prac22.html">Prac 22</a> - CSS stylesheets</li>
+          <li><a href="prac23.html">Prac 23</a> - Responsive Web Design</li>
+          <li><a href="Prac24.html">prac 24</a> - Hosting website on open source</li>
+          <li><a href="prac25.html">Prac 25</a> - Portfolio website</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <div class="footer">
+    <h1>Resize the browser window to see how the content responds to resizing.</h1>
+  </div>
+</body>
+</html>
